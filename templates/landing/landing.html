@@ -9,8 +9,14 @@
 <body>
 <div class="form">
 	<h2 class="welcome"><p>Наш интернет магазин скоро откроется</p><p>Пожалуйста, оставьте свои данные в форме ниже.</p></h2>
-	<p>E-mail: <input placeholder="Введите свой E-mail" name="email"></p>
-	<p>Имя: <input placeholder="Введите свое имя" name="name"> <input type="submit" value="Отправить" name="mail-submit"></p>
+	<form class="mail-sub" action="" method="post"> {% csrf_token %}
+	<div>
+		{{ form.as_p }}
+		<div>
+			<button class="form-sub" type="submit"><strong><i>Отправить</i></strong></button>
+		</div>
+	</div>
+	</form>
 </div>
 </body>
 </html>
