@@ -1,0 +1,13 @@
+.form .welcome {
+	font-family: Comic Sans MS;
+}
+
+.form {
+	float: left;
+	margin-top: 100px;
+	margin-left: 30%;
+}
+
+body {
+	background-color: #7bc9f6;
+}
