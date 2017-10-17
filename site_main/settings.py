@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'landing',
+    'orders',
+    'products',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +121,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"), '/bambook/static/')
+MEDIA_ROOT = '/bambook/static/media/'

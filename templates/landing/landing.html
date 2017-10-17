@@ -11,11 +11,11 @@
 	<h2 class="welcome"><p>Наш интернет магазин скоро откроется</p><p>Пожалуйста, оставьте свои данные в форме ниже.</p></h2>
 	<form class="mail-sub" action="" method="post"> {% csrf_token %}
 	<div>
-		{{ form }}
-		<div>
-			<br>
-			<button class="form-sub" type="submit"><strong><i>Отправить</i></strong></button>
-		</div>
+		<label style="color: #fff">Ваш E-mail</label>
+		<input class="sub-sub" name="{{ form.email.name }}">
+			<label style="color: #fff">Ваше имя</label>
+			<input type="text" class="sub-sub" name="{{ form.name.name }}">
+				<button class="form-sub" type="submit"><strong><i>Отправить</i></strong></button>
 	</div>
 	</form>
 </div>

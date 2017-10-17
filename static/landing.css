@@ -1,5 +1,7 @@
 .form .welcome {
 	font-family: Comic Sans MS;
+	font-weight: 200;
+	color: #fff;
 }
 
 .form {
@@ -17,7 +19,6 @@
 	padding-right: 15px;
 	padding-bottom: 10px;
 	padding-top: 10px;
-	margin-left: 190px;
 }
 
 .form .mail-sub .form-sub:hover {
@@ -27,5 +28,10 @@
 }
 
 body {
-	background-color: #28B5D3;
+	background-color: #6C4D77;
+}
+
+.sub-sub {
+	height: 20px;
+	border-radius: 5px;
 }
