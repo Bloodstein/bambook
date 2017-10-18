@@ -8,22 +8,22 @@ class Product(models.Model):
 	updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
 	def __str__(self):
-		return '%s' % self.id,
+		return '%s' % self.name
 
-		class Meta(object):
+		class Meta:
 			verbose_name='Товар'
-			verbose_name_plural='Товар'
+			verbose_name_plural='Товары'
 
 class ProductImage(models.Model):
-	image = models.ForeignKey(Product, blank=True, null=True, default=None)
+	product = models.ForeignKey(Product, blank=True, null=True, default=None)
 	image = models.ImageField(upload_to='products_images/')
 	is_active = models.BooleanField(default=True)
 	created = models.DateTimeField(auto_now_add=True, auto_now=False)
 	updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
 	def __str__(self):
-		return '%s' % self.product.name,
+		return '%s' % self.product.name
 
-		class Meta(object):
+		class Meta:
 			verbose_name='Фотография'
 			verbose_name_plural='Фотографии'
