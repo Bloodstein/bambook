@@ -6,3 +6,7 @@ class Subscriber(models.Model):
 
 	def __str__(self):
 		return '%s %s' % (self.name, self.email)
+
+	class Meta:
+		verbose_name='Подписчик'
+		verbose_name_plural='Подписчики'
