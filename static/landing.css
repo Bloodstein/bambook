@@ -11,7 +11,7 @@
 }
 
 .form .mail-sub .form-sub {
-	background-color: #FF4800;
+	background-color: #EB5A02;
 	color: #fff;
 	border: 0px ridge black;
 	border-radius: 3px;
@@ -23,7 +23,7 @@
 
 .form .mail-sub .form-sub:hover {
 	transition: 0.5s;
-	background-color: #EB5A02;
+	background-color: #FF4800;
 	border: 0px groove black;
 }
 
