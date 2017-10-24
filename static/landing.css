@@ -1,37 +1,92 @@
-.form .welcome {
-	font-family: Comic Sans MS;
-	font-weight: 200;
-	color: #fff;
+html, body {
+	background-image: url(images/font.jpg);
 }
 
-.form {
-	float: left;
-	margin-top: 100px;
-	margin-left: 30%;
+.label {
+	font-size: 15px;
 }
 
-.form .mail-sub .form-sub {
-	background-color: #FF4800;
-	color: #fff;
-	border: 0px ridge black;
-	border-radius: 3px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 10px;
-	padding-top: 10px;
+.top-container {
+	position: relative;
+	padding-top: 5%;
+	font-weight: bold;
+	color: #49DDDD;
+	text-shadow: 
+		-0   -1px 6px #4C6BB5,
+		 0   -1px 6px #4C6BB5,
+		-0    1px 6px #4C6BB5,
+		 0    1px 6px #4C6BB5,
+		-1px -0   6px #4C6BB5,
+		 1px -0   6px #4C6BB5,
+		-1px  0   6px #4C6BB5,
+		 1px  0   6px #4C6BB5,
+		-1px -1px 6px #4C6BB5,
+		 1px -1px 6px #4C6BB5,
+		-1px  1px 6px #4C6BB5,
+		 1px  1px 6px #4C6BB5,
+		-1px -1px 6px #4C6BB5,
+		 1px -1px 6px #4C6BB5,
+		-1px  1px 6px #4C6BB5,
+		 1px  1px 6px #4C6BB5;
 }
 
-.form .mail-sub .form-sub:hover {
-	transition: 0.5s;
-	background-color: #EB5A02;
-	border: 0px groove black;
+.top-container p {
+	font-size: 25px;
 }
 
-body {
-	background-color: #6C4D77;
+.btn {
+	margin-left: 10px;
+	font-family: Tahoma;
 }
 
-.sub-sub {
-	height: 20px;
-	border-radius: 5px;
+header.text-center {
+	font-size: 30px;
+	color: white;
+	text-shadow: 
+		-0   -1px 6px #23EA37,
+		 0   -1px 6px #23EA37,
+		-0    1px 6px #23EA37,
+		 0    1px 6px #23EA37,
+		-1px -0   6px #23EA37,
+		 1px -0   6px #23EA37,
+		-1px  0   6px #23EA37,
+		 1px  0   6px #23EA37,
+		-1px -1px 6px #23EA37,
+		 1px -1px 6px #23EA37,
+		-1px  1px 6px #23EA37,
+		 1px  1px 6px #23EA37,
+		-1px -1px 6px #23EA37,
+		 1px -1px 6px #23EA37,
+		-1px  1px 6px #23EA37,
+		 1px  1px 6px #23EA37;
+}
+
+.input-group {
+	border-radius: 7px;
+}
+
+form {
+	margin-left: 27.5%;
+}
+
+.start {
+	font-weight: bold;
+	font-size: 50px;
+	text-shadow: 
+		-0   -1px 6px #23EA37,
+		 0   -1px 6px #23EA37,
+		-0    1px 6px #23EA37,
+		 0    1px 6px #23EA37,
+		-1px -0   6px #23EA37,
+		 1px -0   6px #23EA37,
+		-1px  0   6px #23EA37,
+		 1px  0   6px #23EA37,
+		-1px -1px 6px #23EA37,
+		 1px -1px 6px #23EA37,
+		-1px  1px 6px #23EA37,
+		 1px  1px 6px #23EA37,
+		-1px -1px 6px #23EA37,
+		 1px -1px 6px #23EA37,
+		-1px  1px 6px #23EA37,
+		 1px  1px 6px #23EA37;
 }
