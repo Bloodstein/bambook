@@ -2,7 +2,7 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
-<link rel="stylesheet" href="{% static 'home.css' %">
+<link rel="stylesheet" href="{% static 'home.css' %}">
 	<div class="section-top">
 		<img src="{% static 'images/slider0.jpg' %}" class="img-responsive">
 	</div>
@@ -10,10 +10,21 @@
 	<div class="section">
 		<div class="container">
 			<div class="row">
-				{% for product in products %}
+				{% for product_image in products_images %}
 				<div class="col-lg-3">
 					<div class="product-item">
-					{{ product.name }}
+					<h4>{{ product_image.product.name }}</h4>
+					<p>{{ product_image.product.description|truncatechars:148 }}
+					</p>
+					<div>
+							<img src="{{ product_image.image.url }}" class="img-responsive">
+					</div>
+					<h4 class="price-text">{{ product_image.product.price }} руб.</h4>
+					<div class="add-to-cart-btn">
+						<button class="btn btn-success">
+							Добавить в корзину
+						</button>
+					</div>
 					</div>
 				</div>
 				{% endfor %}
