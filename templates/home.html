@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'home.css' %">
+	<div class="section-top">
+		<img src="{% static 'images/slider0.jpg' %}" class="img-responsive">
+	</div>
+
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				{% for product in products %}
+				<div class="col-lg-3">
+					<div class="product-item">
+					{{ product.name }}
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
